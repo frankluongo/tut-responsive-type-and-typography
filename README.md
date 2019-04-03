@@ -119,20 +119,100 @@ This gets to around 65-70 characters
 
 
 ### 02.02 Common Font Issues
+- Make sure your text fits the screen
+
+**Preserve Meaning, Not Pixel Size**
+- Communicate Ideas / Influence Behavior
+- Use scale as a starting point
+
+
 ### 02.03 Coding Web Fonts
+- Use `@font-face` declarations for fonts
+
+
 ### 02.04 Font Loading Stages
+- Make sure to have a font fallback
+
+
 ### 02.05 Changing Type Faces
+- This is very simple
+
+
 ### 02.06 Typography For Reading
+
+
+
 ### 02.07 Set Root Min & Max Font Size
+```css
+:root {
+  /* Breakpoint variables */
+  --bp-small: 24.15;  /* 386.4 */
+  --bp-medium: 43.75; /* 700 */
+  --bp-large: 60.25;  /* 964 */
+  --bp-xlarge: 75;    /* 1200 */
+  /* Paragraph variables */
+  --p-line-height-min: 1.15;
+  --p-line-height-max: 1.5;
+  --p-font-size-min: 1.0;
+  --p-font-size-max: 1.25;
+  --p-vf-wght: 350;
+  /* H1 variables */
+  --h1-line-height-min: 1;
+  --h1-line-height-max: 1.25;
+  --h1-font-size-min: 5;
+  --h1-font-size-max: 10;
+  --h1-vf-wght-multiplier-s: 2.5;
+  --h1-vf-wght-multiplier-m: 2.75;
+  --h1-vf-wght-multiplier-l: 3;
+  --wght-multiplier: 1; }
+```
+
+
 ### 02.08 Variable Font Demo
+- [Variable Fonts Codepen](https://codepen.io/jpamental/pen/MGEPEL/)
+
+
 ### 02.09 CSS Variables
+- You can use CSS Variables to change font styles
+
+
 ### 02.10 Variable Fonts Fallback
+- Use `@supports` to enhance the experience
+```css
+@supports (font-variation-settings: normal) {
+  .no-support-message {
+    display: none;
+    position: absolute;
+    text-indent: -999em;
+    visibility: hidden;
+  }
+}
+
+@supports not (font-variation-settings: normal) {
+  .example-ampersand {
+    display: none;
+    position: absolute;
+    text-indent: -999em;
+    visibility: hidden;
+  }
+}
+```
+
+
 ### 02.11 Variable Font Q&A
+
 
 
 
 ## 03 Future of Web Typography
 
+### 03.01 Variable Font Features
+### 03.02 Pulling From History
+### 03.03 OpenType Features
+### 03.04 Text-First Design
+### 03.05 Adding Font Features
+### 03.06 Editorial Design
+### 03.07 Editorial Design With Variable Fonts
 
 
 
