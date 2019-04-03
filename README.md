@@ -207,10 +207,42 @@ This gets to around 65-70 characters
 ## 03 Future of Web Typography
 
 ### 03.01 Variable Font Features
+- Font variation setting are implemented but not the proper CSS attributes
+
+
 ### 03.02 Pulling From History
+- Type was cut differently at different sizes
+
+
 ### 03.03 OpenType Features
+
+
 ### 03.04 Text-First Design
+- Start with paragraphs
+- Look at the Design is communication Page
+- There is a First line selector in CSS
+
+
 ### 03.05 Adding Font Features
+[What can my font do?](https://wakamaifondue.com/)
+
+```scss
+.test-elem {
+  hyphen: auto;
+
+  font-feature-settings: "liga" 1, "kern" 1, "frac" 1;
+  // 0 is to turn it off
+}
+
+.item > p:first-of-type:first-line {
+  ...
+}
+.item > p:first-of-type:first-letter {
+  ...
+}
+```
+
+
 ### 03.06 Editorial Design
 ### 03.07 Editorial Design With Variable Fonts
 
